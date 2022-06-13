@@ -1,0 +1,1198 @@
+/* General */
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 26px;
+    line-height: 22px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.container-fluid {
+    max-width: 1230px;
+    margin: auto;
+    padding: 0 16px;
+}
+
+.rg-15 {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+}
+
+.rg-15 [class*="col"] {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+
+.wrap-15 {
+    padding: 0 15px;
+}
+
+.title-red {
+    background: #F30000;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.title-red h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+
+
+/* header */
+
+#header .header-top {
+    display: flex;
+    padding: 25px 0 15px;
+    align-items: center;
+}
+
+#header .header-top .logo {
+    display: block;
+    margin-right: 30px;
+}
+
+#header .header-top .welcome {
+    flex: 1;
+}
+
+#header .header-top .welcome p {
+    margin: 0;
+}
+
+#header .header-top .welcome a {
+    color: #0061A3;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s;
+}
+
+#header .header-top .welcome a:hover {
+    color: #F30000;
+}
+
+#header .header-top .social {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+#header .header-top .social a {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 3px;
+    line-height: 0;
+}
+
+#header .header-top .social a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+a.facebook {
+    background-color: #1877F2;
+}
+
+a.twitter {
+    background-color: #1DA1F3;
+}
+
+a.fb-messanger {
+    background-color: #1877F2;
+}
+
+a.whatsapp {
+    background-color: #25D366;
+
+}
+
+#header .header-top .language .dropdown-toggle {
+    font-size: 14px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+#header .header-top .language .dropdown-toggle img {
+    padding-right: 10px;
+}
+
+#header .header-top .language .dropdown-toggle::after {
+    border: 0;
+    background-image: url(../images/arrow-down.svg);
+    width: 12px;
+    height: 8px;
+    background-position: center;
+    background-size: cover;
+    margin-left: 15px;
+    margin-bottom: 2px;
+}
+
+#header .header-bottom {
+    background-color: #F30000;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+#header .header-bottom .nav-link {
+    padding: 7.5px 25px;
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+}
+
+#header .header-bottom .active .nav-link,
+#header .header-bottom .nav-link:hover {
+    text-decoration: underline;
+}
+
+#header .header-bottom .nav-link::after {
+    content: '';
+    width: 1px;
+    height: 24px;
+    background-color: #fff;
+    position: absolute;
+    right: 0px;
+    top: calc(50% - 12px);
+}
+
+#header .header-bottom .myAc .btn {
+    padding: 7.5px 38px;
+    background-color: #0061A3;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 19.2px;
+    font-size: 16px;
+}
+
+#header .header-bottom .myAc .btn:hover {
+    color: #F30000;
+}
+
+
+/* banner */
+
+#banner {
+    padding: 30px 0;
+}
+
+#banner img {
+    width: 100%;
+}
+
+
+
+/* header cards */
+
+#header-cards .card {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    height: 100%;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+}
+
+#header-cards .card img {
+    width: 20%;
+    max-height: 80px;
+    object-fit: contain;
+    align-self: center;
+}
+
+#header-cards .card .texts {
+    width: 80%;
+    padding-left: 5px;
+}
+
+#header-cards .card .texts .title {
+    display: flex;
+    flex-flow: wrap;
+}
+
+#header-cards .card .texts .title h6 {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+#header-cards .card .texts .title a {
+    padding-right: 5px;
+    color: #0061A3;
+    font-weight: 500;
+    text-align: right;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+#header-cards .card .texts .title a:hover {
+    color: #F30000;
+    transition: .3s;
+}
+
+#header-cards .card .texts p {
+    line-height: 16.8px;
+    color: #5F5F5F;
+    margin: 0;
+    margin-top: 5px;
+}
+
+/* upcoming-lottery-draws */
+
+#upcoming-lottery-draws {
+    padding: 75px 0;
+}
+
+#upcoming-lottery-draws .title {
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+#upcoming-lottery-draws .card {
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    background: #fff;
+}
+
+#upcoming-lottery-draws .card .top {
+    display: flex;
+    align-items: flex-end;
+    padding: 7px;
+    justify-content: space-around;
+    max-width: 370px;
+    margin: auto;
+    width: 100%;
+}
+
+#upcoming-lottery-draws .card .top .image {
+    max-width: 50%;
+}
+
+#upcoming-lottery-draws .card .top .img-size {
+    max-width: 100%;
+    height: 80px;
+    width: 140px;
+    margin: auto;
+    border: 2px solid #E0E0E0;
+    border-radius: 50%;
+    text-align: center;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#upcoming-lottery-draws .card .top img {
+    max-height: 66px;
+    max-width: 120px;
+}
+
+#upcoming-lottery-draws .card .top .text {
+    max-width: 50%;
+    text-align: center;
+}
+
+#upcoming-lottery-draws .card .top .text p {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+#upcoming-lottery-draws .card .top .text b {
+    font-weight: 500;
+    margin-left: 3px;
+}
+
+#upcoming-lottery-draws .card .top .text h2 {
+    color: #13902A;
+}
+
+#upcoming-lottery-draws .card .bottom {
+    display: flex;
+    padding: 11px;
+    background-color: #0061A3;
+    align-items: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#upcoming-lottery-draws .card .bottom a.btn {
+    width: 48%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    background: #F7D300;
+    border-radius: 8px;
+}
+
+#upcoming-lottery-draws .card .bottom a.btn:hover {
+    background-color: #F30000;
+    color: #fff;
+}
+
+#upcoming-lottery-draws .card .bottom .time {
+    display: flex;
+    justify-content: center;
+    width: 52%;
+    font-weight: 500;
+    color: #fff;
+}
+
+#upcoming-lottery-draws .card .bottom .time b {
+    font-weight: 500;
+    margin-left: 6px;
+    font-size: 18px;
+}
+
+
+/* upcoming-lottery-online */
+
+#upcoming-lottery-online {
+    padding-bottom: 75px;
+}
+
+#upcoming-lottery-online .row {
+    padding: 0 35px;
+}
+
+#upcoming-lottery-online .col {
+    width: 20%;
+    flex: none;
+    margin-bottom: 15px;
+}
+
+#upcoming-lottery-online .card {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    position: relative;
+    padding: 12px 13px 13px;
+}
+
+#upcoming-lottery-online .card .star {
+    width: 16px;
+    position: absolute;
+    top: 10px;
+    right: 18px;
+}
+
+#upcoming-lottery-online .card .image {
+    width: 95px;
+    height: 93px;
+    border: 2px solid #E0E0E0;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+#upcoming-lottery-online .card .image img {
+    max-width: 85%;
+}
+
+#upcoming-lottery-online .card .text {
+    text-align: center;
+}
+
+#upcoming-lottery-online .card .text p {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+#upcoming-lottery-online .card .text b {
+    font-weight: 500;
+    margin-left: 3px;
+}
+
+#upcoming-lottery-online .card .text h3 {
+    color: #000;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+}
+
+#upcoming-lottery-online .card a.btn {
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    background: #F7D300;
+    border-radius: 8px;
+}
+
+#upcoming-lottery-online .card a.btn:hover {
+    background-color: #F30000;
+    color: #fff;
+}
+
+#upcoming-lottery-online .card .time {
+    display: flex;
+    justify-content: center;
+    width: 52%;
+    font-weight: 500;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+#upcoming-lottery-online .card .time b {
+    margin-left: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #0061A3;
+}
+
+#upcoming-lottery-online .col-12 {
+    text-align: right;
+}
+
+#upcoming-lottery-online .col-12 .more-btn {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0;
+    color: #0061A3;
+    text-decoration: underline;
+    transition: .3s;
+}
+
+#upcoming-lottery-online .col-12 .more-btn:hover {
+    color: #F30000;
+}
+
+
+/* won */
+
+#won {
+    padding-bottom: 65px;
+}
+
+#won .left-col .card {
+    padding: 20px;
+}
+
+#won .card {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+}
+
+#won .left-col .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+#won .left-col .top img {
+    margin-right: 20px;
+    width: 50px;
+}
+
+#won .left-col .top h2 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+#won .left-col .top h2 span {
+    color: #0061A3;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 22px;
+    margin-left: 10px;
+}
+
+#won .left-col .bottom img {
+    width: 100%;
+}
+
+#won .left-col .bottom .result {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#won .left-col .bottom .result p {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+#won .left-col .bottom .result p span {
+    display: block;
+    text-align: center;
+}
+
+#won .left-col .bottom .result p span.result-code span {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: #F30000;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    border-radius: 50%;
+    margin-left: 2px;
+}
+
+#won .left-col .bottom .result p span.date {
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+
+#won .right-col .content {
+    max-width: 230px;
+}
+
+#won .right-col h6 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+#won .right-col p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+#won .right-col a {
+    display: block;
+    text-align: center;
+}
+
+#won .right-col a.link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    margin: 30px 0 35px;
+    color: #0061A3;
+    text-decoration: underline;
+}
+
+#won .right-col a.btn {
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    background: #F7D300;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#won .right-col a.btn:hover {
+    background-color: #F30000;
+    color: #fff;
+}
+
+#won .total-card {
+    margin-bottom: 25px;
+    padding: 8px;
+    text-align: center;
+}
+
+#won .total-card p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+#won .total-card h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    margin: 0;
+}
+
+#won .total-card h2 small {
+    font-size: 18px;
+}
+
+#won .total-card h2.price {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 22px;
+    color: #13902A;
+    margin-bottom: 5px;
+}
+
+#won .card-location {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 15px;
+}
+
+#won .card-location img {
+    width: 30%;
+    max-width: 70px;
+    object-fit: contain;
+}
+
+#won .card-location .text {
+    width: 70%;
+    padding-left: 10px;
+}
+
+#won .card-location .text p {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+#won .card-location .text p img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+#won .card-location .text p span {
+    display: block;
+}
+
+
+/* faq */
+
+#faq {
+    padding-bottom: 75px;
+}
+
+#faq .accordion-item {
+    border-bottom: 1px solid #E0E0E0;
+    margin-top: 10px;
+}
+
+#faq .accordion-button {
+    background-color: #fff;
+    padding: 10px 20px;
+    color: #0061A3;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+#faq .accordion-button:focus {
+    box-shadow: none;
+}
+
+#faq .accordion-button:not(.collapsed):focus {
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+#faq .accordion-button::after {
+    background-image: url(../images/arrow-down.svg);
+    width: 15px;
+    background-size: contain;
+    background-position: center;
+}
+
+
+/* footer */
+
+#footer .container-fluid {
+    padding-top: 110px;
+    padding-bottom: 55px;
+    background-repeat: no-repeat;
+    background-image: url(../images/footer-bg.png), linear-gradient(0deg, rgba(224, 224, 224, 0.47) 0%, rgba(225, 225, 225, 0.16) 20.75%, rgba(255, 254, 254, 0.26) 84.14%, #FFFFFF 126.52%);
+}
+
+#footer .wrap {
+    padding: 0 8%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer .w-app {
+    display: flex;
+    align-items: center;
+}
+
+#footer .w-app a {
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    padding: 7px;
+    border-radius: 50%;
+    margin-right: 15px;
+    line-height: 0;
+}
+
+#footer .w-app a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#footer .w-app p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    color: #5F5F5F;
+}
+
+#footer .w-app h6 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+#footer .social a {
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    padding: 7px;
+    border-radius: 50%;
+    margin-left: 10px;
+    line-height: 0;
+}
+
+#footer .social a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 35px;
+}
+
+#footer .footer-bottom h6 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 15px;
+}
+
+#footer .col-link ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .col-link ul a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+}
+
+#footer .col-link ul a.active,
+#footer .col-link ul a:hover {
+    font-weight: 700;
+}
+
+#footer .col-address {
+    max-width: 250px;
+}
+
+#footer .col-address p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.5px;
+    margin-bottom: 5px;
+}
+
+#footer .col-address p:last-child {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+#footer .payment-icon {
+    margin-bottom: 30px;
+    max-width: 100%;
+}
+
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width:991px) {
+
+    /* header */
+    #header .header-bottom .myAc .btn,
+    #header .header-bottom .nav-link {
+        padding: 7.5px 20px;
+        font-size: 14px;
+    }
+
+    /* upcoming-lottery-draws  */
+    #upcoming-lottery-draws .card .top .text h2 {
+        font-size: 24px;
+    }
+
+    /* upcoming-lottery-online */
+    #upcoming-lottery-online .col {
+        width: 33.33%;
+    }
+
+    #upcoming-lottery-online .col:nth-child(n+7) {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .wrap-15 {
+        padding: 0px;
+    }
+
+    .title-red h4 {
+        font-size: 16px;
+    }
+
+    /* header */
+    #header .header-top {
+        padding: 16px 0 16px;
+        justify-content: space-between;
+        flex-flow: wrap !important;
+    }
+
+    #header .header-top .logo {
+        margin: 0;
+        width: calc(100% - 50px);
+    }
+
+    #header .header-top .logo img {
+        width: 182px;
+        max-width: 80%;
+        margin: auto;
+        display: block;
+    }
+
+    #header .header-top .navbar-toggler {
+        padding: 0;
+        border: 0;
+    }
+
+    #header .header-top .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    #header .header-top .user {
+        width: 24px;
+        height: 24px;
+        background-color: #0061A3;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    #header .header-top .welcome {
+        display: flex;
+        width: 100%;
+        margin-top: 5px;
+        justify-content: space-between;
+    }
+
+    #header .header-bottom .navbar-collapse {
+        position: absolute;
+        width: 100%;
+        background-color: #F30000;
+        border-radius: 8px;
+        left: 0;
+    }
+
+    #header .header-bottom .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #header .header-bottom .nav-link::after {
+        display: none;
+    }
+
+
+    /* banner */
+    #banner {
+        padding: 5px 0 15px;
+    }
+
+    #banner .container-fluid {
+        padding: 0;
+    }
+
+    /* header-cards */
+    #header-cards .col-md-4 {
+        margin-bottom: 12px;
+    }
+
+    #header-cards .card .texts .title a {
+        font-size: 13px;
+    }
+
+    /* upcoming-lottery-draws */
+    #upcoming-lottery-draws {
+        padding: 15px 0;
+    }
+
+    #upcoming-lottery-draws .title {
+        padding-left: 0;
+        margin-bottom: 15px;
+    }
+
+    #upcoming-lottery-draws .title h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    #upcoming-lottery-draws .card {
+        margin-bottom: 15px;
+    }
+
+    #upcoming-lottery-draws .card .top .img-size {
+        height: 75px;
+        width: 125px;
+    }
+
+
+    /* upcoming-lottery-online */
+    #upcoming-lottery-online {
+        padding-bottom: 30px;
+    }
+
+    #upcoming-lottery-online .row {
+        padding: 0 8px;
+    }
+
+    #upcoming-lottery-online .col {
+        width: 50%;
+    }
+
+    #upcoming-lottery-online .col:nth-child(n+7) {
+        display: none;
+    }
+
+    #upcoming-lottery-online .card {
+        padding: 15px 8px 10px;
+    }
+
+    #upcoming-lottery-online .card .image {
+        width: 80px;
+        height: 77px;
+    }
+
+    #upcoming-lottery-online .card .text p {
+        font-size: 12px;
+    }
+
+    #upcoming-lottery-online .card .text h3 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    #upcoming-lottery-online .card .time b {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    #upcoming-lottery-online .col-12 .more-btn {
+        font-size: 14px;
+    }
+
+    /* won  */
+    #won {
+        padding-bottom: 0px;
+    }
+
+    #won .col-md-8 {
+        margin-bottom: 30px;
+    }
+
+    #won .left-col .card {
+        padding: 15px;
+    }
+
+    #won .left-col .top h2,
+    #won .left-col .top h2 span {
+        font-size: 26px;
+    }
+
+    #won .left-col .top img {
+        width: 40px;
+        margin-right: 10px;
+    }
+
+    #won .left-col .bottom .result {
+        flex-flow: wrap;
+    }
+
+    #won .right-col .content {
+        margin-top: 15px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #won .right-col .content p {
+        text-align: left;
+    }
+
+    #won .right-col a.link {
+        margin: 12px 0 15px;
+    }
+
+    #won .right-col .btn {
+        max-width: 220px;
+        margin: auto;
+    }
+
+    /* footer */
+    #footer .container-fluid {
+        padding-top: 80px;
+        padding-bottom: 15px;
+        background-size: 140%;
+    }
+
+    #footer .wrap {
+        padding: 0;
+    }
+
+    #footer .w-app a {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+    }
+
+    #footer .social {
+        margin-left: auto;
+        margin-top: 10px;
+    }
+
+    #footer .social a {
+        width: 24px;
+        height: 24px;
+        padding: 4px;
+        margin-left: 5px;
+    }
+
+    #footer .social a img {
+        width: 100%;
+        height: 100%;
+        max-width: 100% !important;
+    }
+
+    #footer .footer-bottom {
+        flex-flow: wrap;
+    }
+
+    #footer .col-link {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    #footer .col-link ul {
+        width: 50%;
+    }
+
+    #footer .col-link h6 {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #footer .col-link a {
+        font-size: 14px !important;
+    }
+
+    #footer .col-address {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #footer .col-payment {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #footer .col-payment .payment-icon {
+        max-width: 90%;
+    }
+
+    #footer .col-payment .trust img {
+        max-width: 40%;
+    }
+
+    #footer .col-address p {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    #footer .col-address p:last-child {
+        font-size: 10px;
+        line-height: 21px;
+    }
+}
